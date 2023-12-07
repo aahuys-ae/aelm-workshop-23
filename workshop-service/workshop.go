@@ -10,7 +10,6 @@ type Workshop struct {
 	Date         string   `json:"date"`
 	Presentator  string   `json:"presentator"`
 	Participants []string `json:"participants"`
-	Temp		 string
 }
 
 var workshop = Workshop{
@@ -18,7 +17,6 @@ var workshop = Workshop{
 	Date:         "07/12/2023",
 	Presentator:  "Arnout Hoebreckx",
 	Participants: []string{"John Doe", "Mary Little Lamb", "Chuck Norris"},
-	Temp:		  "temp",
 }
 
 func getWorkshopHandler(w http.ResponseWriter, r *http.Request) {
